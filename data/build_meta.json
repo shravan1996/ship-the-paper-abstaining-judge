@@ -1,0 +1,14 @@
+{
+  "items": 1972,
+  "corpus_documents": 15772,
+  "by_family": {
+    "elements": 472,
+    "ports": 500,
+    "timezones": 500,
+    "unicode": 500
+  },
+  "python": "3.14.7",
+  "unicode": "16.0.0",
+  "tzdata": "2026c",
+  "platform": "macOS-26.3-arm64-arm-64bit-Mach-O"
+}

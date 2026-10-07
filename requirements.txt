@@ -1,0 +1,2 @@
+# Standard library only. Python 3.11 or newer.
+# collect.py also needs a local Ollama (tested on 0.34.4) serving qwen3.5:9b.
