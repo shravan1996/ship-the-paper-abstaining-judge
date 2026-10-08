@@ -83,11 +83,16 @@ def certified(m: int, w: int, alpha: float, delta: float, table: tuple[int, ...]
 # Threshold selection
 # ---------------------------------------------------------------------------------------------
 
-def single_threshold(u: list[float], w: list[int], alpha: float, delta: float) -> float:
-    """Eq. 8: the largest t whose every smaller candidate threshold also certifies risk <= alpha.
+def single_threshold(u: list[float], w: list[int], alpha: float, delta: float,
+                     rule: str = "prefix") -> float:
+    """Single-mode threshold over the sorted unique uncertainties.
 
-    Candidates are the sorted unique uncertainties, scanned upwards, stopping at the first one
-    that fails. Returns -inf when the smallest candidate already fails, so nothing is accepted.
+    rule="prefix" is Eq. 8 as written: the largest t such that every candidate threshold at or
+    below t also certifies risk <= alpha, scanned upwards and stopped at the first failure.
+    rule="largest" is the sentence that introduces Eq. 8, "the largest threshold whose UCB stays
+    below the risk level": the largest t whose own bound certifies, with no prefix condition.
+    The two differ when the most confident group is too small to certify on its own, which is
+    common when uncertainties are all distinct. Returns -inf when nothing certifies.
     """
     table = wmax_table(alpha, delta, len(u))
     order = sorted(range(len(u)), key=lambda i: u[i])
@@ -100,7 +105,7 @@ def single_threshold(u: list[float], w: list[int], alpha: float, delta: float) -
             i += 1
         if errs <= table[m]:
             best = t
-        else:
+        elif rule == "prefix":
             break
     return best
 

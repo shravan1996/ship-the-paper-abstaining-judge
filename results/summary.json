@@ -1,0 +1,5243 @@
+{
+ "delta": 0.05,
+ "alphas": [
+  0.05,
+  0.1,
+  0.15,
+  0.2,
+  0.25
+ ],
+ "primary_draws": 1000,
+ "secondary_draws": 500,
+ "describe": {
+  "all": {
+   "items": 1972,
+   "examinee_accuracy": 0.47971602434077076,
+   "mode1_accuracy": 0.5933062880324544,
+   "mode2_accuracy": 0.9929006085192698,
+   "mode1_says_true": 0.8438133874239351,
+   "mode1_false_accept_share_of_failures": 0.9476309226932669,
+   "mode1_failures_with_u_below_0.05": 13,
+   "mode1_failures": 802,
+   "mode2_failures": 14,
+   "retrieval_gold_in_top3": 0.9984787018255578,
+   "unparsed_verdicts": 0,
+   "retrieval_raised_uncertainty": 0.20892494929006086,
+   "min_u1_ties": 1,
+   "distinct_u1": 1972,
+   "distinct_u2": 1972,
+   "mean_answer_s": 5.934351600411257,
+   "mean_mode1_s": 6.4216688294213995,
+   "mean_mode2_s": 20.293994395105983,
+   "mean_retrieval_s": 0.009173431764269421,
+   "mean_mode1_prompt_tokens": 135.05375253549695,
+   "mean_mode2_prompt_tokens": 364.2586206896552
+  },
+  "by_family": {
+   "elements": {
+    "items": 472,
+    "examinee_accuracy": 0.9957627118644068,
+    "mode1_accuracy": 0.972457627118644,
+    "mode2_accuracy": 0.9915254237288136,
+    "mode1_says_true": 0.9682203389830508,
+    "mode1_false_accept_share_of_failures": 0.0,
+    "mode1_failures_with_u_below_0.05": 8,
+    "mode1_failures": 13,
+    "mode2_failures": 4,
+    "retrieval_gold_in_top3": 1.0,
+    "unparsed_verdicts": 0,
+    "retrieval_raised_uncertainty": 0.7796610169491526
+   },
+   "ports": {
+    "items": 500,
+    "examinee_accuracy": 0.04,
+    "mode1_accuracy": 0.4,
+    "mode2_accuracy": 0.998,
+    "mode1_says_true": 0.64,
+    "mode1_false_accept_share_of_failures": 1.0,
+    "mode1_failures_with_u_below_0.05": 2,
+    "mode1_failures": 300,
+    "mode2_failures": 1,
+    "retrieval_gold_in_top3": 0.994,
+    "unparsed_verdicts": 0,
+    "retrieval_raised_uncertainty": 0.014
+   },
+   "unicode": {
+    "items": 500,
+    "examinee_accuracy": 0.108,
+    "mode1_accuracy": 0.236,
+    "mode2_accuracy": 0.988,
+    "mode1_says_true": 0.86,
+    "mode1_false_accept_share_of_failures": 0.9921465968586387,
+    "mode1_failures_with_u_below_0.05": 2,
+    "mode1_failures": 382,
+    "mode2_failures": 6,
+    "retrieval_gold_in_top3": 1.0,
+    "unparsed_verdicts": 0,
+    "retrieval_raised_uncertainty": 0.052
+   },
+   "timezones": {
+    "items": 500,
+    "examinee_accuracy": 0.804,
+    "mode1_accuracy": 0.786,
+    "mode2_accuracy": 0.994,
+    "mode1_says_true": 0.914,
+    "mode1_false_accept_share_of_failures": 0.7570093457943925,
+    "mode1_failures_with_u_below_0.05": 1,
+    "mode1_failures": 107,
+    "mode2_failures": 3,
+    "retrieval_gold_in_top3": 1.0,
+    "unparsed_verdicts": 0,
+    "retrieval_raised_uncertainty": 0.022
+   }
+  },
+  "most_confident_mode1_false_accepts": [
+   {
+    "id": "po0488",
+    "q": "In the IANA service name and port registry, which TCP port number is assigned to the service named \"imap4-ssl\"?",
+    "candidate": "993",
+    "reference": "585",
+    "p_true": 0.9973447159261389,
+    "u1": 0.01840078623149821,
+    "mode2_verdict": 0,
+    "u2": 0.1496542570726132
+   },
+   {
+    "id": "po0774",
+    "q": "In the IANA service name and port registry, which TCP port number is assigned to the service named \"upnp-discovery\"?",
+    "candidate": "1900",
+    "reference": "3702",
+    "p_true": 0.9957608270433193,
+    "u1": 0.027390417726774325,
+    "mode2_verdict": 0,
+    "u2": 0.008164305718524159
+   },
+   {
+    "id": "un1008",
+    "q": "What is the Unicode code point of the character named \"EQUAL TO OR GREATER-THAN\"? Answer in the form U+XXXX.",
+    "candidate": "U+2265",
+    "reference": "U+22DD",
+    "p_true": 0.9921033343840788,
+    "u1": 0.046095647746734955,
+    "mode2_verdict": 0,
+    "u2": 0.08148787240114302
+   },
+   {
+    "id": "un1004",
+    "q": "What is the Unicode code point of the character named \"LEFT-TO-RIGHT OVERRIDE\"? Answer in the form U+XXXX.",
+    "candidate": "U+202A",
+    "reference": "U+202D",
+    "p_true": 0.9918800603060048,
+    "u1": 0.047171665431189766,
+    "mode2_verdict": 0,
+    "u2": 0.039945419322097254
+   },
+   {
+    "id": "un1173",
+    "q": "What is the Unicode code point of the character named \"DIAERESIS\"? Answer in the form U+XXXX.",
+    "candidate": "U+0308",
+    "reference": "U+00A8",
+    "p_true": 0.9864638342424636,
+    "u1": 0.07168200299207696,
+    "mode2_verdict": 1,
+    "u2": 0.5228132453839481
+   },
+   {
+    "id": "un1074",
+    "q": "What is the Unicode code point of the character named \"GREEK PI SYMBOL\"? Answer in the form U+XXXX.",
+    "candidate": "U+03C0",
+    "reference": "U+03D6",
+    "p_true": 0.986215207600708,
+    "u1": 0.07274600257312909,
+    "mode2_verdict": 0,
+    "u2": 0.007683695576065545
+   },
+   {
+    "id": "ti1767",
+    "q": "What was the UTC offset of the IANA time zone \"Indian/Maldives\" on 15 January 2025? Answer in the form +HH:MM or -HH:MM.",
+    "candidate": "+05:30",
+    "reference": "+05:00",
+    "p_true": 0.9859763984829806,
+    "u1": 0.07376370555533523,
+    "mode2_verdict": 0,
+    "u2": 0.00028330779675328184
+   },
+   {
+    "id": "po0702",
+    "q": "In the IANA service name and port registry, which TCP port number is assigned to the service named \"wins\"?",
+    "candidate": "137",
+    "reference": "1512",
+    "p_true": 0.9851402840804071,
+    "u1": 0.0772948098178163,
+    "mode2_verdict": 0,
+    "u2": 0.020518662797722766
+   }
+  ]
+ },
+ "paper_style": {
+  "mode1_only": {
+   "0.05": {
+    "mean_test_fdr": 0.0,
+    "std_test_fdr": 0.0,
+    "share_of_splits_above_alpha": 0.0,
+    "mean_coverage": 0.0
+   },
+   "0.10": {
+    "mean_test_fdr": 0.0,
+    "std_test_fdr": 0.0,
+    "share_of_splits_above_alpha": 0.0,
+    "mean_coverage": 0.0
+   },
+   "0.15": {
+    "mean_test_fdr": 0.0,
+    "std_test_fdr": 0.0,
+    "share_of_splits_above_alpha": 0.0,
+    "mean_coverage": 0.0
+   },
+   "0.20": {
+    "mean_test_fdr": 0.0,
+    "std_test_fdr": 0.0,
+    "share_of_splits_above_alpha": 0.0,
+    "mean_coverage": 0.0
+   },
+   "0.25": {
+    "mean_test_fdr": 0.0,
+    "std_test_fdr": 0.0,
+    "share_of_splits_above_alpha": 0.0,
+    "mean_coverage": 0.0
+   }
+  },
+  "joint": {
+   "0.05": {
+    "mean_test_fdr": 0.006332990812919894,
+    "std_test_fdr": 0.0019107202587541556,
+    "share_of_splits_above_alpha": 0.0,
+    "mean_coverage": 0.9993306288032454
+   },
+   "0.10": {
+    "mean_test_fdr": 0.006332990812919894,
+    "std_test_fdr": 0.0019107202587541556,
+    "share_of_splits_above_alpha": 0.0,
+    "mean_coverage": 0.9993306288032454
+   },
+   "0.15": {
+    "mean_test_fdr": 0.006332990812919894,
+    "std_test_fdr": 0.0019107202587541556,
+    "share_of_splits_above_alpha": 0.0,
+    "mean_coverage": 0.9993306288032454
+   },
+   "0.20": {
+    "mean_test_fdr": 0.006332990812919894,
+    "std_test_fdr": 0.0019107202587541556,
+    "share_of_splits_above_alpha": 0.0,
+    "mean_coverage": 0.9993306288032454
+   },
+   "0.25": {
+    "mean_test_fdr": 0.006332990812919894,
+    "std_test_fdr": 0.0019107202587541556,
+    "share_of_splits_above_alpha": 0.0,
+    "mean_coverage": 0.9993306288032454
+   }
+  }
+ },
+ "conditions": {
+  "primary": {
+   "mode1_only": {
+    "0.05": {
+     "draws": 1000,
+     "violation_rate": 0.0,
+     "violation_se": 3.162277660168379e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 1000,
+     "violation_rate": 0.0,
+     "violation_se": 3.162277660168379e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.15": {
+     "draws": 1000,
+     "violation_rate": 0.0,
+     "violation_se": 3.162277660168379e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.20": {
+     "draws": 1000,
+     "violation_rate": 0.0,
+     "violation_se": 3.162277660168379e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.25": {
+     "draws": 1000,
+     "violation_rate": 0.0,
+     "violation_se": 3.162277660168379e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    }
+   },
+   "mode1_only_largest": {
+    "0.05": {
+     "draws": 1000,
+     "violation_rate": 0.044,
+     "violation_se": 0.006485676526007136,
+     "mean_risk": 0.02917046124311018,
+     "p95_risk": 0.04817518248175182,
+     "max_risk": 0.07180156657963446,
+     "mean_coverage": 0.2751490872210953,
+     "mean_retrieval": 0.7248509127789047,
+     "mean_mode1_share": 0.2751490872210953,
+     "zero_coverage_share": 0.014
+    },
+    "0.10": {
+     "draws": 1000,
+     "violation_rate": 0.035,
+     "violation_se": 0.005811626278418116,
+     "mean_risk": 0.0748160589910076,
+     "p95_risk": 0.09806295399515738,
+     "max_risk": 0.12076749435665914,
+     "mean_coverage": 0.3909568965517241,
+     "mean_retrieval": 0.6090431034482758,
+     "mean_mode1_share": 0.3909568965517241,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 1000,
+     "violation_rate": 0.031,
+     "violation_se": 0.0054807846153630225,
+     "mean_risk": 0.12130679845264178,
+     "p95_risk": 0.14668094218415417,
+     "max_risk": 0.17272727272727273,
+     "mean_coverage": 0.44661460446247464,
+     "mean_retrieval": 0.5533853955375254,
+     "mean_mode1_share": 0.44661460446247464,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 1000,
+     "violation_rate": 0.041,
+     "violation_se": 0.006270486424512854,
+     "mean_risk": 0.16915711320302887,
+     "p95_risk": 0.1984732824427481,
+     "max_risk": 0.2198001816530427,
+     "mean_coverage": 0.49877079107505073,
+     "mean_retrieval": 0.5012292089249493,
+     "mean_mode1_share": 0.49877079107505073,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 1000,
+     "violation_rate": 0.05,
+     "violation_se": 0.006892024376045111,
+     "mean_risk": 0.21863448203035762,
+     "p95_risk": 0.2502113271344041,
+     "max_risk": 0.26950925181013674,
+     "mean_coverage": 0.5578067951318458,
+     "mean_retrieval": 0.44219320486815417,
+     "mean_mode1_share": 0.5578067951318458,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "mode2_only": {
+    "0.05": {
+     "draws": 1000,
+     "violation_rate": 0.0,
+     "violation_se": 3.162277660168379e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 1000,
+     "violation_rate": 0.0,
+     "violation_se": 3.162277660168379e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.15": {
+     "draws": 1000,
+     "violation_rate": 0.0,
+     "violation_se": 3.162277660168379e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.20": {
+     "draws": 1000,
+     "violation_rate": 0.0,
+     "violation_se": 3.162277660168379e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.25": {
+     "draws": 1000,
+     "violation_rate": 0.0,
+     "violation_se": 3.162277660168379e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    }
+   },
+   "joint": {
+    "0.05": {
+     "draws": 1000,
+     "violation_rate": 0.0,
+     "violation_se": 3.162277660168379e-08,
+     "mean_risk": 0.006658582314647957,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.007099391480730223,
+     "mean_coverage": 0.9992079107505071,
+     "mean_retrieval": 0.9987555780933063,
+     "mean_mode1_share": 0.001244421906693712,
+     "zero_coverage_share": 0.0
+    },
+    "0.10": {
+     "draws": 1000,
+     "violation_rate": 0.0,
+     "violation_se": 3.162277660168379e-08,
+     "mean_risk": 0.006658582314647957,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.007099391480730223,
+     "mean_coverage": 0.9992079107505071,
+     "mean_retrieval": 0.9987555780933063,
+     "mean_mode1_share": 0.001244421906693712,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 1000,
+     "violation_rate": 0.0,
+     "violation_se": 3.162277660168379e-08,
+     "mean_risk": 0.006658582314647957,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.007099391480730223,
+     "mean_coverage": 0.9992079107505071,
+     "mean_retrieval": 0.9987555780933063,
+     "mean_mode1_share": 0.001244421906693712,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 1000,
+     "violation_rate": 0.0,
+     "violation_se": 3.162277660168379e-08,
+     "mean_risk": 0.006658582314647957,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.007099391480730223,
+     "mean_coverage": 0.9992079107505071,
+     "mean_retrieval": 0.9987555780933063,
+     "mean_mode1_share": 0.001244421906693712,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 1000,
+     "violation_rate": 0.0,
+     "violation_se": 3.162277660168379e-08,
+     "mean_risk": 0.006658582314647957,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.007099391480730223,
+     "mean_coverage": 0.9992079107505071,
+     "mean_retrieval": 0.9987555780933063,
+     "mean_mode1_share": 0.001244421906693712,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint_conservative": {
+    "0.05": {
+     "draws": 1000,
+     "violation_rate": 0.0,
+     "violation_se": 3.162277660168379e-08,
+     "mean_risk": 0.006658582314647957,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.007099391480730223,
+     "mean_coverage": 0.9992079107505071,
+     "mean_retrieval": 0.9987555780933063,
+     "mean_mode1_share": 0.001244421906693712,
+     "zero_coverage_share": 0.0
+    },
+    "0.10": {
+     "draws": 1000,
+     "violation_rate": 0.0,
+     "violation_se": 3.162277660168379e-08,
+     "mean_risk": 0.006658582314647957,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.007099391480730223,
+     "mean_coverage": 0.9992079107505071,
+     "mean_retrieval": 0.9987555780933063,
+     "mean_mode1_share": 0.001244421906693712,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 1000,
+     "violation_rate": 0.0,
+     "violation_se": 3.162277660168379e-08,
+     "mean_risk": 0.006658582314647957,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.007099391480730223,
+     "mean_coverage": 0.9992079107505071,
+     "mean_retrieval": 0.9987555780933063,
+     "mean_mode1_share": 0.001244421906693712,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 1000,
+     "violation_rate": 0.0,
+     "violation_se": 3.162277660168379e-08,
+     "mean_risk": 0.006658582314647957,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.007099391480730223,
+     "mean_coverage": 0.9992079107505071,
+     "mean_retrieval": 0.9987555780933063,
+     "mean_mode1_share": 0.001244421906693712,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 1000,
+     "violation_rate": 0.0,
+     "violation_se": 3.162277660168379e-08,
+     "mean_risk": 0.006658582314647957,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.007099391480730223,
+     "mean_coverage": 0.9992079107505071,
+     "mean_retrieval": 0.9987555780933063,
+     "mean_mode1_share": 0.001244421906693712,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint_split": {
+    "0.05": {
+     "draws": 1000,
+     "violation_rate": 0.0,
+     "violation_se": 3.162277660168379e-08,
+     "mean_risk": 0.0058515996975347815,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.007099391480730223,
+     "mean_coverage": 0.9242008113590263,
+     "mean_retrieval": 0.997988336713996,
+     "mean_mode1_share": 0.0020116632860040567,
+     "zero_coverage_share": 0.074
+    },
+    "0.10": {
+     "draws": 1000,
+     "violation_rate": 0.0,
+     "violation_se": 3.162277660168379e-08,
+     "mean_risk": 0.006340365749771931,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.007099391480730223,
+     "mean_coverage": 0.9981282961460446,
+     "mean_retrieval": 0.9978022312373225,
+     "mean_mode1_share": 0.0021977687626774847,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 1000,
+     "violation_rate": 0.0,
+     "violation_se": 3.162277660168379e-08,
+     "mean_risk": 0.006340365749771931,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.007099391480730223,
+     "mean_coverage": 0.9981282961460446,
+     "mean_retrieval": 0.9978022312373225,
+     "mean_mode1_share": 0.0021977687626774847,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 1000,
+     "violation_rate": 0.0,
+     "violation_se": 3.162277660168379e-08,
+     "mean_risk": 0.006340365749771931,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.007099391480730223,
+     "mean_coverage": 0.9981282961460446,
+     "mean_retrieval": 0.9978022312373225,
+     "mean_mode1_share": 0.0021977687626774847,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 1000,
+     "violation_rate": 0.0,
+     "violation_se": 3.162277660168379e-08,
+     "mean_risk": 0.006340365749771931,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.007099391480730223,
+     "mean_coverage": 0.9981282961460446,
+     "mean_retrieval": 0.9978022312373225,
+     "mean_mode1_share": 0.0021977687626774847,
+     "zero_coverage_share": 0.0
+    }
+   }
+  },
+  "size_250": {
+   "mode1_only": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    }
+   },
+   "mode1_only_largest": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.02,
+     "violation_se": 0.006260990336999411,
+     "mean_risk": 0.007714195083880745,
+     "p95_risk": 0.03815580286168521,
+     "max_risk": 0.07532467532467532,
+     "mean_coverage": 0.07437221095334685,
+     "mean_retrieval": 0.9256277890466531,
+     "mean_mode1_share": 0.07437221095334685,
+     "zero_coverage_share": 0.728
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.032,
+     "violation_se": 0.007870959280799261,
+     "mean_risk": 0.04745128162853787,
+     "p95_risk": 0.0880893300248139,
+     "max_risk": 0.12513966480446928,
+     "mean_coverage": 0.3151024340770791,
+     "mean_retrieval": 0.6848975659229208,
+     "mean_mode1_share": 0.3151024340770791,
+     "zero_coverage_share": 0.06
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.028,
+     "violation_se": 0.007377804551490911,
+     "mean_risk": 0.09169480255692675,
+     "p95_risk": 0.1420824295010846,
+     "max_risk": 0.18289085545722714,
+     "mean_coverage": 0.4089523326572008,
+     "mean_retrieval": 0.5910476673427991,
+     "mean_mode1_share": 0.4089523326572008,
+     "zero_coverage_share": 0.002
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.036,
+     "violation_se": 0.008331146379700696,
+     "mean_risk": 0.13624906569329473,
+     "p95_risk": 0.19460500963391136,
+     "max_risk": 0.23850823937554205,
+     "mean_coverage": 0.4622870182555781,
+     "mean_retrieval": 0.5377129817444218,
+     "mean_mode1_share": 0.4622870182555781,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.036,
+     "violation_se": 0.008331146379700696,
+     "mean_risk": 0.18616972741147325,
+     "p95_risk": 0.24379811804961504,
+     "max_risk": 0.32520891364902504,
+     "mean_coverage": 0.5193874239350913,
+     "mean_retrieval": 0.4806125760649087,
+     "mean_mode1_share": 0.5193874239350913,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.005952722704553871,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.0106544901065449,
+     "mean_coverage": 0.9964746450304259,
+     "mean_retrieval": 0.9946135902636917,
+     "mean_mode1_share": 0.005386409736308316,
+     "zero_coverage_share": 0.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.005937512302403198,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.007099391480730223,
+     "mean_coverage": 0.9964736308316431,
+     "mean_retrieval": 0.9956805273833671,
+     "mean_mode1_share": 0.00431947261663286,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.005937512302403198,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.007099391480730223,
+     "mean_coverage": 0.9964736308316431,
+     "mean_retrieval": 0.9956805273833671,
+     "mean_mode1_share": 0.00431947261663286,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.005937512302403198,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.007099391480730223,
+     "mean_coverage": 0.9964736308316431,
+     "mean_retrieval": 0.9956805273833671,
+     "mean_mode1_share": 0.00431947261663286,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.005937512302403198,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.007099391480730223,
+     "mean_coverage": 0.9964736308316431,
+     "mean_retrieval": 0.9956805273833671,
+     "mean_mode1_share": 0.00431947261663286,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint_conservative": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0059499434889679036,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.0106544901065449,
+     "mean_coverage": 0.9964381338742394,
+     "mean_retrieval": 0.9939026369168357,
+     "mean_mode1_share": 0.0060973630831643,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.005937512302403198,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.007099391480730223,
+     "mean_coverage": 0.9964736308316431,
+     "mean_retrieval": 0.9956805273833671,
+     "mean_mode1_share": 0.00431947261663286,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.005937512302403198,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.007099391480730223,
+     "mean_coverage": 0.9964736308316431,
+     "mean_retrieval": 0.9956805273833671,
+     "mean_mode1_share": 0.00431947261663286,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.005937512302403198,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.007099391480730223,
+     "mean_coverage": 0.9964736308316431,
+     "mean_retrieval": 0.9956805273833671,
+     "mean_mode1_share": 0.00431947261663286,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint_split": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.004870190746013092,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.007099391480730223,
+     "mean_coverage": 0.9333519269776877,
+     "mean_retrieval": 0.9918346855983773,
+     "mean_mode1_share": 0.008165314401622718,
+     "zero_coverage_share": 0.06
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0051626471004738595,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.007099391480730223,
+     "mean_coverage": 0.9869655172413793,
+     "mean_retrieval": 0.9913427991886409,
+     "mean_mode1_share": 0.008657200811359025,
+     "zero_coverage_share": 0.006
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.00519526601747592,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.007099391480730223,
+     "mean_coverage": 0.9929340770791075,
+     "mean_retrieval": 0.9912667342799188,
+     "mean_mode1_share": 0.008733265720081136,
+     "zero_coverage_share": 0.0
+    }
+   }
+  },
+  "size_500": {
+   "mode1_only": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    }
+   },
+   "mode1_only_largest": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.032,
+     "violation_se": 0.007870959280799261,
+     "mean_risk": 0.019671024074498198,
+     "p95_risk": 0.047128129602356406,
+     "max_risk": 0.06851119894598155,
+     "mean_coverage": 0.20435699797160242,
+     "mean_retrieval": 0.7956430020283976,
+     "mean_mode1_share": 0.20435699797160242,
+     "zero_coverage_share": 0.22
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.04,
+     "violation_se": 0.008763560920082658,
+     "mean_risk": 0.06465530259953824,
+     "p95_risk": 0.09744214372716199,
+     "max_risk": 0.12076749435665914,
+     "mean_coverage": 0.37227079107505073,
+     "mean_retrieval": 0.6277292089249492,
+     "mean_mode1_share": 0.37227079107505073,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.03,
+     "violation_se": 0.00762889244910426,
+     "mean_risk": 0.1097044778242651,
+     "p95_risk": 0.14531754574811626,
+     "max_risk": 0.17255297679112008,
+     "mean_coverage": 0.4327677484787018,
+     "mean_retrieval": 0.5672322515212982,
+     "mean_mode1_share": 0.4327677484787018,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.03,
+     "violation_se": 0.00762889244910426,
+     "mean_risk": 0.15577381726563563,
+     "p95_risk": 0.19694072657743786,
+     "max_risk": 0.22461814914645103,
+     "mean_coverage": 0.48390872210953345,
+     "mean_retrieval": 0.5160912778904666,
+     "mean_mode1_share": 0.48390872210953345,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.03,
+     "violation_se": 0.00762889244910426,
+     "mean_risk": 0.2044134794206675,
+     "p95_risk": 0.24444444444444444,
+     "max_risk": 0.27258193445243806,
+     "mean_coverage": 0.5406450304259635,
+     "mean_retrieval": 0.4593549695740365,
+     "mean_mode1_share": 0.5406450304259635,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.006421285058942342,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.007099391480730223,
+     "mean_coverage": 0.9983732251521299,
+     "mean_retrieval": 0.997737322515213,
+     "mean_mode1_share": 0.002262677484787018,
+     "zero_coverage_share": 0.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.006421285058942342,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.007099391480730223,
+     "mean_coverage": 0.9983732251521299,
+     "mean_retrieval": 0.997737322515213,
+     "mean_mode1_share": 0.002262677484787018,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.006421285058942342,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.007099391480730223,
+     "mean_coverage": 0.9983732251521299,
+     "mean_retrieval": 0.997737322515213,
+     "mean_mode1_share": 0.002262677484787018,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.006421285058942342,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.007099391480730223,
+     "mean_coverage": 0.9983732251521299,
+     "mean_retrieval": 0.997737322515213,
+     "mean_mode1_share": 0.002262677484787018,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.006421285058942342,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.007099391480730223,
+     "mean_coverage": 0.9983732251521299,
+     "mean_retrieval": 0.997737322515213,
+     "mean_mode1_share": 0.002262677484787018,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint_conservative": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.006157510654007575,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.01016260162601626,
+     "mean_coverage": 0.9966947261663286,
+     "mean_retrieval": 0.9836348884381338,
+     "mean_mode1_share": 0.016365111561866125,
+     "zero_coverage_share": 0.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.006421285058942342,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.007099391480730223,
+     "mean_coverage": 0.9983732251521299,
+     "mean_retrieval": 0.997737322515213,
+     "mean_mode1_share": 0.002262677484787018,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.006421285058942342,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.007099391480730223,
+     "mean_coverage": 0.9983732251521299,
+     "mean_retrieval": 0.997737322515213,
+     "mean_mode1_share": 0.002262677484787018,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.006421285058942342,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.007099391480730223,
+     "mean_coverage": 0.9983732251521299,
+     "mean_retrieval": 0.997737322515213,
+     "mean_mode1_share": 0.002262677484787018,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.006421285058942342,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.007099391480730223,
+     "mean_coverage": 0.9983732251521299,
+     "mean_retrieval": 0.997737322515213,
+     "mean_mode1_share": 0.002262677484787018,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint_split": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.005801866859645057,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.007099391480730223,
+     "mean_coverage": 0.9725953346855983,
+     "mean_retrieval": 0.9958610547667343,
+     "mean_mode1_share": 0.00413894523326572,
+     "zero_coverage_share": 0.024
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.005949322036618182,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.007099391480730223,
+     "mean_coverage": 0.996525354969574,
+     "mean_retrieval": 0.9957707910750507,
+     "mean_mode1_share": 0.004229208924949291,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.005949322036618182,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.007099391480730223,
+     "mean_coverage": 0.996525354969574,
+     "mean_retrieval": 0.9957707910750507,
+     "mean_mode1_share": 0.004229208924949291,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.005949322036618182,
+     "p95_risk": 0.007099391480730223,
+     "max_risk": 0.007099391480730223,
+     "mean_coverage": 0.996525354969574,
+     "mean_retrieval": 0.9957707910750507,
+     "mean_mode1_share": 0.004229208924949291,
+     "zero_coverage_share": 0.0
+    }
+   }
+  },
+  "unseen_elements": {
+   "mode1_only": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    }
+   },
+   "mode1_only_largest": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.00021727924585067442,
+     "p95_risk": 0.0,
+     "max_risk": 0.01818181818181818,
+     "mean_coverage": 0.011233050847457626,
+     "mean_retrieval": 0.9887669491525424,
+     "mean_mode1_share": 0.011233050847457626,
+     "zero_coverage_share": 0.988
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.006936817552703881,
+     "p95_risk": 0.01818181818181818,
+     "max_risk": 0.018691588785046728,
+     "mean_coverage": 0.36033050847457626,
+     "mean_retrieval": 0.6396694915254237,
+     "mean_mode1_share": 0.36033050847457626,
+     "zero_coverage_share": 0.616
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.016502657092192168,
+     "p95_risk": 0.018140589569160998,
+     "max_risk": 0.018691588785046728,
+     "mean_coverage": 0.8807627118644068,
+     "mean_retrieval": 0.11923728813559321,
+     "mean_mode1_share": 0.8807627118644068,
+     "zero_coverage_share": 0.074
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.01757453643998473,
+     "p95_risk": 0.017738359201773836,
+     "max_risk": 0.018604651162790697,
+     "mean_coverage": 0.9567415254237288,
+     "mean_retrieval": 0.04325847457627118,
+     "mean_mode1_share": 0.9567415254237288,
+     "zero_coverage_share": 0.004
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.017536344459425587,
+     "p95_risk": 0.01762114537444934,
+     "max_risk": 0.017857142857142856,
+     "mean_coverage": 0.9665254237288136,
+     "mean_retrieval": 0.03347457627118644,
+     "mean_mode1_share": 0.9665254237288136,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.007468314800820469,
+     "p95_risk": 0.00847457627118644,
+     "max_risk": 0.00847457627118644,
+     "mean_coverage": 0.9989872881355932,
+     "mean_retrieval": 0.5443220338983051,
+     "mean_mode1_share": 0.45567796610169486,
+     "zero_coverage_share": 0.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.007468314800820469,
+     "p95_risk": 0.00847457627118644,
+     "max_risk": 0.00847457627118644,
+     "mean_coverage": 0.9989872881355932,
+     "mean_retrieval": 0.5443220338983051,
+     "mean_mode1_share": 0.45567796610169486,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.007468314800820469,
+     "p95_risk": 0.00847457627118644,
+     "max_risk": 0.00847457627118644,
+     "mean_coverage": 0.9989872881355932,
+     "mean_retrieval": 0.5443220338983051,
+     "mean_mode1_share": 0.45567796610169486,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.007468314800820469,
+     "p95_risk": 0.00847457627118644,
+     "max_risk": 0.00847457627118644,
+     "mean_coverage": 0.9989872881355932,
+     "mean_retrieval": 0.5443220338983051,
+     "mean_mode1_share": 0.45567796610169486,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.007468314800820469,
+     "p95_risk": 0.00847457627118644,
+     "max_risk": 0.00847457627118644,
+     "mean_coverage": 0.9989872881355932,
+     "mean_retrieval": 0.5443220338983051,
+     "mean_mode1_share": 0.45567796610169486,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint_conservative": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.007468314800820469,
+     "p95_risk": 0.00847457627118644,
+     "max_risk": 0.00847457627118644,
+     "mean_coverage": 0.9989872881355932,
+     "mean_retrieval": 0.5443220338983051,
+     "mean_mode1_share": 0.45567796610169486,
+     "zero_coverage_share": 0.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.007468314800820469,
+     "p95_risk": 0.00847457627118644,
+     "max_risk": 0.00847457627118644,
+     "mean_coverage": 0.9989872881355932,
+     "mean_retrieval": 0.5443220338983051,
+     "mean_mode1_share": 0.45567796610169486,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.007468314800820469,
+     "p95_risk": 0.00847457627118644,
+     "max_risk": 0.00847457627118644,
+     "mean_coverage": 0.9989872881355932,
+     "mean_retrieval": 0.5443220338983051,
+     "mean_mode1_share": 0.45567796610169486,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.007468314800820469,
+     "p95_risk": 0.00847457627118644,
+     "max_risk": 0.00847457627118644,
+     "mean_coverage": 0.9989872881355932,
+     "mean_retrieval": 0.5443220338983051,
+     "mean_mode1_share": 0.45567796610169486,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.007468314800820469,
+     "p95_risk": 0.00847457627118644,
+     "max_risk": 0.00847457627118644,
+     "mean_coverage": 0.9989872881355932,
+     "mean_retrieval": 0.5443220338983051,
+     "mean_mode1_share": 0.45567796610169486,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint_split": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.007945131857071347,
+     "p95_risk": 0.00847457627118644,
+     "max_risk": 0.014830508474576272,
+     "mean_coverage": 0.9973093220338983,
+     "mean_retrieval": 0.42277118644067796,
+     "mean_mode1_share": 0.577228813559322,
+     "zero_coverage_share": 0.002
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.007974792874020501,
+     "p95_risk": 0.008492569002123142,
+     "max_risk": 0.014830508474576272,
+     "mean_coverage": 0.9993093220338983,
+     "mean_retrieval": 0.42101271186440675,
+     "mean_mode1_share": 0.5789872881355932,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.007974792874020501,
+     "p95_risk": 0.008492569002123142,
+     "max_risk": 0.014830508474576272,
+     "mean_coverage": 0.9993093220338983,
+     "mean_retrieval": 0.42101271186440675,
+     "mean_mode1_share": 0.5789872881355932,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.007974792874020501,
+     "p95_risk": 0.008492569002123142,
+     "max_risk": 0.014830508474576272,
+     "mean_coverage": 0.9993093220338983,
+     "mean_retrieval": 0.42101271186440675,
+     "mean_mode1_share": 0.5789872881355932,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.007974792874020501,
+     "p95_risk": 0.008492569002123142,
+     "max_risk": 0.014830508474576272,
+     "mean_coverage": 0.9993093220338983,
+     "mean_retrieval": 0.42101271186440675,
+     "mean_mode1_share": 0.5789872881355932,
+     "zero_coverage_share": 0.0
+    }
+   }
+  },
+  "seen_others_elements": {
+   "joint": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.006493535333442975,
+     "p95_risk": 0.0066711140760507,
+     "max_risk": 0.0066711140760507,
+     "mean_coverage": 0.999316,
+     "mean_retrieval": 0.9986653333333334,
+     "mean_mode1_share": 0.0013346666666666667,
+     "zero_coverage_share": 0.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.006493535333442975,
+     "p95_risk": 0.0066711140760507,
+     "max_risk": 0.0066711140760507,
+     "mean_coverage": 0.999316,
+     "mean_retrieval": 0.9986653333333334,
+     "mean_mode1_share": 0.0013346666666666667,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.006493535333442975,
+     "p95_risk": 0.0066711140760507,
+     "max_risk": 0.0066711140760507,
+     "mean_coverage": 0.999316,
+     "mean_retrieval": 0.9986653333333334,
+     "mean_mode1_share": 0.0013346666666666667,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.006493535333442975,
+     "p95_risk": 0.0066711140760507,
+     "max_risk": 0.0066711140760507,
+     "mean_coverage": 0.999316,
+     "mean_retrieval": 0.9986653333333334,
+     "mean_mode1_share": 0.0013346666666666667,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.006493535333442975,
+     "p95_risk": 0.0066711140760507,
+     "max_risk": 0.0066711140760507,
+     "mean_coverage": 0.999316,
+     "mean_retrieval": 0.9986653333333334,
+     "mean_mode1_share": 0.0013346666666666667,
+     "zero_coverage_share": 0.0
+    }
+   }
+  },
+  "recal100_elements": {
+   "mode1_only": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    }
+   },
+   "mode1_only_largest": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.010695308996389773,
+     "p95_risk": 0.02754237288135593,
+     "max_risk": 0.027600849256900213,
+     "mean_coverage": 0.5405805084745763,
+     "mean_retrieval": 0.4594194915254237,
+     "mean_mode1_share": 0.5405805084745763,
+     "zero_coverage_share": 0.438
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.02266386505188342,
+     "p95_risk": 0.027600849256900213,
+     "max_risk": 0.027600849256900213,
+     "mean_coverage": 0.9835805084745762,
+     "mean_retrieval": 0.01641949152542373,
+     "mean_mode1_share": 0.9835805084745762,
+     "zero_coverage_share": 0.004
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.02341717891481625,
+     "p95_risk": 0.027600849256900213,
+     "max_risk": 0.027600849256900213,
+     "mean_coverage": 0.9907245762711865,
+     "mean_retrieval": 0.00927542372881356,
+     "mean_mode1_share": 0.9907245762711865,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.02341717891481625,
+     "p95_risk": 0.027600849256900213,
+     "max_risk": 0.027600849256900213,
+     "mean_coverage": 0.9907245762711865,
+     "mean_retrieval": 0.00927542372881356,
+     "mean_mode1_share": 0.9907245762711865,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.02341717891481625,
+     "p95_risk": 0.027600849256900213,
+     "max_risk": 0.027600849256900213,
+     "mean_coverage": 0.9907245762711865,
+     "mean_retrieval": 0.00927542372881356,
+     "mean_mode1_share": 0.9907245762711865,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0040230624584961855,
+     "p95_risk": 0.00847457627118644,
+     "max_risk": 0.00847457627118644,
+     "mean_coverage": 0.9704745762711865,
+     "mean_retrieval": 0.9899152542372882,
+     "mean_mode1_share": 0.010084745762711865,
+     "zero_coverage_share": 0.018
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.004988142669904493,
+     "p95_risk": 0.00847457627118644,
+     "max_risk": 0.00847457627118644,
+     "mean_coverage": 0.9910338983050848,
+     "mean_retrieval": 0.9897372881355931,
+     "mean_mode1_share": 0.01026271186440678,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.004996509060095623,
+     "p95_risk": 0.00847457627118644,
+     "max_risk": 0.00847457627118644,
+     "mean_coverage": 0.9910508474576272,
+     "mean_retrieval": 0.9897372881355931,
+     "mean_mode1_share": 0.01026271186440678,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.004996509060095623,
+     "p95_risk": 0.00847457627118644,
+     "max_risk": 0.00847457627118644,
+     "mean_coverage": 0.9910508474576272,
+     "mean_retrieval": 0.9897372881355931,
+     "mean_mode1_share": 0.01026271186440678,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.004996509060095623,
+     "p95_risk": 0.00847457627118644,
+     "max_risk": 0.00847457627118644,
+     "mean_coverage": 0.9910508474576272,
+     "mean_retrieval": 0.9897372881355931,
+     "mean_mode1_share": 0.01026271186440678,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint_conservative": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0040230624584961855,
+     "p95_risk": 0.00847457627118644,
+     "max_risk": 0.00847457627118644,
+     "mean_coverage": 0.9704745762711865,
+     "mean_retrieval": 0.9899152542372882,
+     "mean_mode1_share": 0.010084745762711865,
+     "zero_coverage_share": 0.018
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.004988142669904493,
+     "p95_risk": 0.00847457627118644,
+     "max_risk": 0.00847457627118644,
+     "mean_coverage": 0.9910338983050848,
+     "mean_retrieval": 0.9897372881355931,
+     "mean_mode1_share": 0.01026271186440678,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.004996509060095623,
+     "p95_risk": 0.00847457627118644,
+     "max_risk": 0.00847457627118644,
+     "mean_coverage": 0.9910508474576272,
+     "mean_retrieval": 0.9897372881355931,
+     "mean_mode1_share": 0.01026271186440678,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint_split": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    }
+   }
+  },
+  "recal250_elements": {
+   "mode1_only": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    }
+   },
+   "mode1_only_largest": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.021730468108481484,
+     "p95_risk": 0.027600849256900213,
+     "max_risk": 0.027600849256900213,
+     "mean_coverage": 0.9651567796610169,
+     "mean_retrieval": 0.03484322033898305,
+     "mean_mode1_share": 0.9651567796610169,
+     "zero_coverage_share": 0.004
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.026019097243281854,
+     "p95_risk": 0.027600849256900213,
+     "max_risk": 0.027600849256900213,
+     "mean_coverage": 0.9968220338983051,
+     "mean_retrieval": 0.003177966101694915,
+     "mean_mode1_share": 0.9968220338983051,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.026019097243281854,
+     "p95_risk": 0.027600849256900213,
+     "max_risk": 0.027600849256900213,
+     "mean_coverage": 0.9968220338983051,
+     "mean_retrieval": 0.003177966101694915,
+     "mean_mode1_share": 0.9968220338983051,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.026019097243281854,
+     "p95_risk": 0.027600849256900213,
+     "max_risk": 0.027600849256900213,
+     "mean_coverage": 0.9968220338983051,
+     "mean_retrieval": 0.003177966101694915,
+     "mean_mode1_share": 0.9968220338983051,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.026019097243281854,
+     "p95_risk": 0.027600849256900213,
+     "max_risk": 0.027600849256900213,
+     "mean_coverage": 0.9968220338983051,
+     "mean_retrieval": 0.003177966101694915,
+     "mean_mode1_share": 0.9968220338983051,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.006686725256355186,
+     "p95_risk": 0.00847457627118644,
+     "max_risk": 0.00847457627118644,
+     "mean_coverage": 0.9971016949152542,
+     "mean_retrieval": 0.9950550847457628,
+     "mean_mode1_share": 0.004944915254237288,
+     "zero_coverage_share": 0.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0067077309633403,
+     "p95_risk": 0.00847457627118644,
+     "max_risk": 0.00847457627118644,
+     "mean_coverage": 0.9971398305084745,
+     "mean_retrieval": 0.9950550847457628,
+     "mean_mode1_share": 0.004944915254237288,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0067077309633403,
+     "p95_risk": 0.00847457627118644,
+     "max_risk": 0.00847457627118644,
+     "mean_coverage": 0.9971398305084745,
+     "mean_retrieval": 0.9950550847457628,
+     "mean_mode1_share": 0.004944915254237288,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0067077309633403,
+     "p95_risk": 0.00847457627118644,
+     "max_risk": 0.00847457627118644,
+     "mean_coverage": 0.9971398305084745,
+     "mean_retrieval": 0.9950550847457628,
+     "mean_mode1_share": 0.004944915254237288,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0067077309633403,
+     "p95_risk": 0.00847457627118644,
+     "max_risk": 0.00847457627118644,
+     "mean_coverage": 0.9971398305084745,
+     "mean_retrieval": 0.9950550847457628,
+     "mean_mode1_share": 0.004944915254237288,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint_conservative": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0066404324374638325,
+     "p95_risk": 0.00847457627118644,
+     "max_risk": 0.00847457627118644,
+     "mean_coverage": 0.997,
+     "mean_retrieval": 0.9950550847457628,
+     "mean_mode1_share": 0.004944915254237288,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0067077309633403,
+     "p95_risk": 0.00847457627118644,
+     "max_risk": 0.00847457627118644,
+     "mean_coverage": 0.9971398305084745,
+     "mean_retrieval": 0.9950550847457628,
+     "mean_mode1_share": 0.004944915254237288,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0067077309633403,
+     "p95_risk": 0.00847457627118644,
+     "max_risk": 0.00847457627118644,
+     "mean_coverage": 0.9971398305084745,
+     "mean_retrieval": 0.9950550847457628,
+     "mean_mode1_share": 0.004944915254237288,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0067077309633403,
+     "p95_risk": 0.00847457627118644,
+     "max_risk": 0.00847457627118644,
+     "mean_coverage": 0.9971398305084745,
+     "mean_retrieval": 0.9950550847457628,
+     "mean_mode1_share": 0.004944915254237288,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint_split": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.003958132282495242,
+     "p95_risk": 0.00847457627118644,
+     "max_risk": 0.00847457627118644,
+     "mean_coverage": 0.7504067796610169,
+     "mean_retrieval": 0.9932669491525423,
+     "mean_mode1_share": 0.0067330508474576275,
+     "zero_coverage_share": 0.244
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.005059919478373095,
+     "p95_risk": 0.00847457627118644,
+     "max_risk": 0.00847457627118644,
+     "mean_coverage": 0.9550720338983051,
+     "mean_retrieval": 0.9914745762711865,
+     "mean_mode1_share": 0.008525423728813559,
+     "zero_coverage_share": 0.038
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.005204541564004857,
+     "p95_risk": 0.00847457627118644,
+     "max_risk": 0.00847457627118644,
+     "mean_coverage": 0.9828771186440678,
+     "mean_retrieval": 0.9912330508474576,
+     "mean_mode1_share": 0.008766949152542374,
+     "zero_coverage_share": 0.01
+    }
+   }
+  },
+  "unseen_ports": {
+   "mode1_only": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    }
+   },
+   "mode1_only_largest": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.966,
+     "violation_se": 0.008104813384649892,
+     "mean_risk": 0.10548726806681935,
+     "p95_risk": 0.18181818181818182,
+     "max_risk": 0.25,
+     "mean_coverage": 0.090476,
+     "mean_retrieval": 0.909524,
+     "mean_mode1_share": 0.090476,
+     "zero_coverage_share": 0.004
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.956,
+     "violation_se": 0.009172131704244116,
+     "mean_risk": 0.1152296663945221,
+     "p95_risk": 0.11904761904761904,
+     "max_risk": 0.13333333333333333,
+     "mean_coverage": 0.16358799999999998,
+     "mean_retrieval": 0.8364119999999999,
+     "mean_mode1_share": 0.16358799999999998,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.684,
+     "violation_se": 0.020791536739741004,
+     "mean_risk": 0.17040324392004447,
+     "p95_risk": 0.2627118644067797,
+     "max_risk": 0.2727272727272727,
+     "mean_coverage": 0.201232,
+     "mean_retrieval": 0.798768,
+     "mean_mode1_share": 0.201232,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.972,
+     "violation_se": 0.0073778045514909145,
+     "mean_risk": 0.2740593354919744,
+     "p95_risk": 0.3088235294117647,
+     "max_risk": 0.3503184713375796,
+     "mean_coverage": 0.248084,
+     "mean_retrieval": 0.751916,
+     "mean_mode1_share": 0.248084,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 1.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.34028757028728734,
+     "p95_risk": 0.38764044943820225,
+     "max_risk": 0.4549763033175355,
+     "mean_coverage": 0.30561200000000005,
+     "mean_retrieval": 0.694388,
+     "mean_mode1_share": 0.30561200000000005,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.002000016032064128,
+     "p95_risk": 0.002,
+     "max_risk": 0.002004008016032064,
+     "mean_coverage": 0.999992,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.002000016032064128,
+     "p95_risk": 0.002,
+     "max_risk": 0.002004008016032064,
+     "mean_coverage": 0.999992,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.002000016032064128,
+     "p95_risk": 0.002,
+     "max_risk": 0.002004008016032064,
+     "mean_coverage": 0.999992,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.002000016032064128,
+     "p95_risk": 0.002,
+     "max_risk": 0.002004008016032064,
+     "mean_coverage": 0.999992,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.002000016032064128,
+     "p95_risk": 0.002,
+     "max_risk": 0.002004008016032064,
+     "mean_coverage": 0.999992,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint_conservative": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0020040240480961925,
+     "p95_risk": 0.002,
+     "max_risk": 0.004,
+     "mean_coverage": 0.9999880000000001,
+     "mean_retrieval": 0.999908,
+     "mean_mode1_share": 9.2e-05,
+     "zero_coverage_share": 0.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.002000016032064128,
+     "p95_risk": 0.002,
+     "max_risk": 0.002004008016032064,
+     "mean_coverage": 0.999992,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.002000016032064128,
+     "p95_risk": 0.002,
+     "max_risk": 0.002004008016032064,
+     "mean_coverage": 0.999992,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.002000016032064128,
+     "p95_risk": 0.002,
+     "max_risk": 0.002004008016032064,
+     "mean_coverage": 0.999992,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.002000016032064128,
+     "p95_risk": 0.002,
+     "max_risk": 0.002004008016032064,
+     "mean_coverage": 0.999992,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint_split": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.001752176352705411,
+     "p95_risk": 0.002,
+     "max_risk": 0.002004008016032064,
+     "mean_coverage": 0.875912,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.124
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0020002004008016034,
+     "p95_risk": 0.002004008016032064,
+     "max_risk": 0.002004008016032064,
+     "mean_coverage": 0.9999,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0020002004008016034,
+     "p95_risk": 0.002004008016032064,
+     "max_risk": 0.002004008016032064,
+     "mean_coverage": 0.9999,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0020002004008016034,
+     "p95_risk": 0.002004008016032064,
+     "max_risk": 0.002004008016032064,
+     "mean_coverage": 0.9999,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0020002004008016034,
+     "p95_risk": 0.002004008016032064,
+     "max_risk": 0.002004008016032064,
+     "mean_coverage": 0.9999,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    }
+   }
+  },
+  "seen_others_ports": {
+   "joint": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.008406119287224541,
+     "p95_risk": 0.008831521739130434,
+     "max_risk": 0.008831521739130434,
+     "mean_coverage": 0.9993165760869565,
+     "mean_retrieval": 0.9986657608695653,
+     "mean_mode1_share": 0.0013342391304347824,
+     "zero_coverage_share": 0.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.008406119287224541,
+     "p95_risk": 0.008831521739130434,
+     "max_risk": 0.008831521739130434,
+     "mean_coverage": 0.9993165760869565,
+     "mean_retrieval": 0.9986657608695653,
+     "mean_mode1_share": 0.0013342391304347824,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.008406119287224541,
+     "p95_risk": 0.008831521739130434,
+     "max_risk": 0.008831521739130434,
+     "mean_coverage": 0.9993165760869565,
+     "mean_retrieval": 0.9986657608695653,
+     "mean_mode1_share": 0.0013342391304347824,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.008406119287224541,
+     "p95_risk": 0.008831521739130434,
+     "max_risk": 0.008831521739130434,
+     "mean_coverage": 0.9993165760869565,
+     "mean_retrieval": 0.9986657608695653,
+     "mean_mode1_share": 0.0013342391304347824,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.008406119287224541,
+     "p95_risk": 0.008831521739130434,
+     "max_risk": 0.008831521739130434,
+     "mean_coverage": 0.9993165760869565,
+     "mean_retrieval": 0.9986657608695653,
+     "mean_mode1_share": 0.0013342391304347824,
+     "zero_coverage_share": 0.0
+    }
+   }
+  },
+  "recal100_ports": {
+   "mode1_only": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    }
+   },
+   "mode1_only_largest": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.012,
+     "violation_se": 0.004869496893930624,
+     "mean_risk": 0.007237534921633059,
+     "p95_risk": 0.09859154929577464,
+     "max_risk": 0.18867924528301888,
+     "mean_coverage": 0.009796,
+     "mean_retrieval": 0.990204,
+     "mean_mode1_share": 0.009796,
+     "zero_coverage_share": 0.944
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.008,
+     "violation_se": 0.003983967871356395,
+     "mean_risk": 0.028961532995308518,
+     "p95_risk": 0.15151515151515152,
+     "max_risk": 0.27049180327868855,
+     "mean_coverage": 0.038332,
+     "mean_retrieval": 0.961668,
+     "mean_mode1_share": 0.038332,
+     "zero_coverage_share": 0.78
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.01,
+     "violation_se": 0.0044497190922573975,
+     "mean_risk": 0.05259251772887412,
+     "p95_risk": 0.18867924528301888,
+     "max_risk": 0.29770992366412213,
+     "mean_coverage": 0.066312,
+     "mean_retrieval": 0.933688,
+     "mean_mode1_share": 0.066312,
+     "zero_coverage_share": 0.628
+    }
+   },
+   "joint": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0024709995684442294,
+     "p95_risk": 0.006,
+     "max_risk": 0.008048289738430584,
+     "mean_coverage": 0.989992,
+     "mean_retrieval": 0.9889,
+     "mean_mode1_share": 0.0111,
+     "zero_coverage_share": 0.002
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0024911154654568895,
+     "p95_risk": 0.006012024048096192,
+     "max_risk": 0.008048289738430584,
+     "mean_coverage": 0.9919399999999999,
+     "mean_retrieval": 0.988996,
+     "mean_mode1_share": 0.011004,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0024911154654568895,
+     "p95_risk": 0.006012024048096192,
+     "max_risk": 0.008048289738430584,
+     "mean_coverage": 0.9919399999999999,
+     "mean_retrieval": 0.988996,
+     "mean_mode1_share": 0.011004,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0024911154654568895,
+     "p95_risk": 0.006012024048096192,
+     "max_risk": 0.008048289738430584,
+     "mean_coverage": 0.9919399999999999,
+     "mean_retrieval": 0.988996,
+     "mean_mode1_share": 0.011004,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0024911154654568895,
+     "p95_risk": 0.006012024048096192,
+     "max_risk": 0.008048289738430584,
+     "mean_coverage": 0.9919399999999999,
+     "mean_retrieval": 0.988996,
+     "mean_mode1_share": 0.011004,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint_conservative": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0024709995684442294,
+     "p95_risk": 0.006,
+     "max_risk": 0.008048289738430584,
+     "mean_coverage": 0.989992,
+     "mean_retrieval": 0.9889,
+     "mean_mode1_share": 0.0111,
+     "zero_coverage_share": 0.002
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0024911154654568895,
+     "p95_risk": 0.006012024048096192,
+     "max_risk": 0.008048289738430584,
+     "mean_coverage": 0.9919399999999999,
+     "mean_retrieval": 0.988996,
+     "mean_mode1_share": 0.011004,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0024911154654568895,
+     "p95_risk": 0.006012024048096192,
+     "max_risk": 0.008048289738430584,
+     "mean_coverage": 0.9919399999999999,
+     "mean_retrieval": 0.988996,
+     "mean_mode1_share": 0.011004,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint_split": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    }
+   }
+  },
+  "recal250_ports": {
+   "mode1_only": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    }
+   },
+   "mode1_only_largest": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.018,
+     "violation_se": 0.005945754788081997,
+     "mean_risk": 0.005184340214725062,
+     "p95_risk": 0.09259259259259259,
+     "max_risk": 0.15306122448979592,
+     "mean_coverage": 0.007448,
+     "mean_retrieval": 0.992552,
+     "mean_mode1_share": 0.007448,
+     "zero_coverage_share": 0.95
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.022,
+     "violation_se": 0.006559878047646922,
+     "mean_risk": 0.02763097781781108,
+     "p95_risk": 0.13043478260869565,
+     "max_risk": 0.18867924528301888,
+     "mean_coverage": 0.037876,
+     "mean_retrieval": 0.962124,
+     "mean_mode1_share": 0.037876,
+     "zero_coverage_share": 0.76
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.014,
+     "violation_se": 0.00525433154644813,
+     "mean_risk": 0.07718768064948335,
+     "p95_risk": 0.16831683168316833,
+     "max_risk": 0.24347826086956523,
+     "mean_coverage": 0.101456,
+     "mean_retrieval": 0.898544,
+     "mean_mode1_share": 0.101456,
+     "zero_coverage_share": 0.404
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.018,
+     "violation_se": 0.005945754788081997,
+     "mean_risk": 0.13142562467655028,
+     "p95_risk": 0.22321428571428573,
+     "max_risk": 0.3120567375886525,
+     "mean_coverage": 0.160552,
+     "mean_retrieval": 0.839448,
+     "mean_mode1_share": 0.160552,
+     "zero_coverage_share": 0.146
+    }
+   },
+   "joint": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.002100681587745182,
+     "p95_risk": 0.004,
+     "max_risk": 0.006036217303822937,
+     "mean_coverage": 0.997048,
+     "mean_retrieval": 0.994988,
+     "mean_mode1_share": 0.005012000000000001,
+     "zero_coverage_share": 0.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.002100681587745182,
+     "p95_risk": 0.004,
+     "max_risk": 0.006036217303822937,
+     "mean_coverage": 0.997048,
+     "mean_retrieval": 0.994988,
+     "mean_mode1_share": 0.005012000000000001,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.002100681587745182,
+     "p95_risk": 0.004,
+     "max_risk": 0.006036217303822937,
+     "mean_coverage": 0.997048,
+     "mean_retrieval": 0.994988,
+     "mean_mode1_share": 0.005012000000000001,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.002100681587745182,
+     "p95_risk": 0.004,
+     "max_risk": 0.006036217303822937,
+     "mean_coverage": 0.997048,
+     "mean_retrieval": 0.994988,
+     "mean_mode1_share": 0.005012000000000001,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.002100681587745182,
+     "p95_risk": 0.004,
+     "max_risk": 0.006036217303822937,
+     "mean_coverage": 0.997048,
+     "mean_retrieval": 0.994988,
+     "mean_mode1_share": 0.005012000000000001,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint_conservative": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.002100681587745182,
+     "p95_risk": 0.004,
+     "max_risk": 0.006036217303822937,
+     "mean_coverage": 0.997048,
+     "mean_retrieval": 0.994988,
+     "mean_mode1_share": 0.005012000000000001,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.002100681587745182,
+     "p95_risk": 0.004,
+     "max_risk": 0.006036217303822937,
+     "mean_coverage": 0.997048,
+     "mean_retrieval": 0.994988,
+     "mean_mode1_share": 0.005012000000000001,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.002100681587745182,
+     "p95_risk": 0.004,
+     "max_risk": 0.006036217303822937,
+     "mean_coverage": 0.997048,
+     "mean_retrieval": 0.994988,
+     "mean_mode1_share": 0.005012000000000001,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.002100681587745182,
+     "p95_risk": 0.004,
+     "max_risk": 0.006036217303822937,
+     "mean_coverage": 0.997048,
+     "mean_retrieval": 0.994988,
+     "mean_mode1_share": 0.005012000000000001,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint_split": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0018198488462968963,
+     "p95_risk": 0.004032258064516129,
+     "max_risk": 0.008032128514056224,
+     "mean_coverage": 0.8878440000000001,
+     "mean_retrieval": 0.992736,
+     "mean_mode1_share": 0.0072640000000000005,
+     "zero_coverage_share": 0.106
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0022056230226883853,
+     "p95_risk": 0.004098360655737705,
+     "max_risk": 0.008032128514056224,
+     "mean_coverage": 0.9792799999999999,
+     "mean_retrieval": 0.99144,
+     "mean_mode1_share": 0.00856,
+     "zero_coverage_share": 0.014
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0022662025920915548,
+     "p95_risk": 0.00411522633744856,
+     "max_risk": 0.008032128514056224,
+     "mean_coverage": 0.99314,
+     "mean_retrieval": 0.99124,
+     "mean_mode1_share": 0.00876,
+     "zero_coverage_share": 0.0
+    }
+   }
+  },
+  "unseen_unicode": {
+   "mode1_only": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    }
+   },
+   "mode1_only_largest": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.856,
+     "violation_se": 0.015701210144444283,
+     "mean_risk": 0.3311488811305702,
+     "p95_risk": 0.5967741935483871,
+     "max_risk": 0.6510067114093959,
+     "mean_coverage": 0.13848,
+     "mean_retrieval": 0.86152,
+     "mean_mode1_share": 0.13848,
+     "zero_coverage_share": 0.006
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 1.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.6961483299394865,
+     "p95_risk": 0.7411764705882353,
+     "max_risk": 0.75,
+     "mean_coverage": 0.397972,
+     "mean_retrieval": 0.602028,
+     "mean_mode1_share": 0.397972,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 1.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.760169539909863,
+     "p95_risk": 0.7785016286644951,
+     "max_risk": 0.7838616714697406,
+     "mean_coverage": 0.568148,
+     "mean_retrieval": 0.43185199999999996,
+     "mean_mode1_share": 0.568148,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 1.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.7858337992052622,
+     "p95_risk": 0.7945205479452054,
+     "max_risk": 0.799492385786802,
+     "mean_coverage": 0.699072,
+     "mean_retrieval": 0.300928,
+     "mean_mode1_share": 0.699072,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 1.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.7958035110604691,
+     "p95_risk": 0.7989821882951654,
+     "max_risk": 0.8,
+     "mean_coverage": 0.7927000000000001,
+     "mean_retrieval": 0.2073,
+     "mean_mode1_share": 0.7927000000000001,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.011917277261017737,
+     "p95_risk": 0.012048192771084338,
+     "max_risk": 0.012048192771084338,
+     "mean_coverage": 0.998476,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.011917277261017737,
+     "p95_risk": 0.012048192771084338,
+     "max_risk": 0.012048192771084338,
+     "mean_coverage": 0.998476,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.011917277261017737,
+     "p95_risk": 0.012048192771084338,
+     "max_risk": 0.012048192771084338,
+     "mean_coverage": 0.998476,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.011917277261017737,
+     "p95_risk": 0.012048192771084338,
+     "max_risk": 0.012048192771084338,
+     "mean_coverage": 0.998476,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.011917277261017737,
+     "p95_risk": 0.012048192771084338,
+     "max_risk": 0.012048192771084338,
+     "mean_coverage": 0.998476,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint_conservative": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.011917277261017737,
+     "p95_risk": 0.012048192771084338,
+     "max_risk": 0.012048192771084338,
+     "mean_coverage": 0.998476,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.011917277261017737,
+     "p95_risk": 0.012048192771084338,
+     "max_risk": 0.012048192771084338,
+     "mean_coverage": 0.998476,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.011917277261017737,
+     "p95_risk": 0.012048192771084338,
+     "max_risk": 0.012048192771084338,
+     "mean_coverage": 0.998476,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.011917277261017737,
+     "p95_risk": 0.012048192771084338,
+     "max_risk": 0.012048192771084338,
+     "mean_coverage": 0.998476,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.011917277261017737,
+     "p95_risk": 0.012048192771084338,
+     "max_risk": 0.012048192771084338,
+     "mean_coverage": 0.998476,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint_split": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0106972027756368,
+     "p95_risk": 0.012048192771084338,
+     "max_risk": 0.012048192771084338,
+     "mean_coverage": 0.928224,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.068
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.01146847976209487,
+     "p95_risk": 0.012048192771084338,
+     "max_risk": 0.012048192771084338,
+     "mean_coverage": 0.995892,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.01146847976209487,
+     "p95_risk": 0.012048192771084338,
+     "max_risk": 0.012048192771084338,
+     "mean_coverage": 0.995892,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.01146847976209487,
+     "p95_risk": 0.012048192771084338,
+     "max_risk": 0.012048192771084338,
+     "mean_coverage": 0.995892,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.01146847976209487,
+     "p95_risk": 0.012048192771084338,
+     "max_risk": 0.012048192771084338,
+     "mean_coverage": 0.995892,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    }
+   }
+  },
+  "seen_others_unicode": {
+   "joint": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.004940176130329984,
+     "p95_risk": 0.005434782608695652,
+     "max_risk": 0.005434782608695652,
+     "mean_coverage": 0.999366847826087,
+     "mean_retrieval": 0.9986875,
+     "mean_mode1_share": 0.0013125,
+     "zero_coverage_share": 0.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.004940176130329984,
+     "p95_risk": 0.005434782608695652,
+     "max_risk": 0.005434782608695652,
+     "mean_coverage": 0.999366847826087,
+     "mean_retrieval": 0.9986875,
+     "mean_mode1_share": 0.0013125,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.004940176130329984,
+     "p95_risk": 0.005434782608695652,
+     "max_risk": 0.005434782608695652,
+     "mean_coverage": 0.999366847826087,
+     "mean_retrieval": 0.9986875,
+     "mean_mode1_share": 0.0013125,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.004940176130329984,
+     "p95_risk": 0.005434782608695652,
+     "max_risk": 0.005434782608695652,
+     "mean_coverage": 0.999366847826087,
+     "mean_retrieval": 0.9986875,
+     "mean_mode1_share": 0.0013125,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.004940176130329984,
+     "p95_risk": 0.005434782608695652,
+     "max_risk": 0.005434782608695652,
+     "mean_coverage": 0.999366847826087,
+     "mean_retrieval": 0.9986875,
+     "mean_mode1_share": 0.0013125,
+     "zero_coverage_share": 0.0
+    }
+   }
+  },
+  "recal100_unicode": {
+   "mode1_only": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    }
+   },
+   "mode1_only_largest": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.004,
+     "violation_se": 0.002822764602300376,
+     "mean_risk": 0.0030577847083797316,
+     "p95_risk": 0.0,
+     "max_risk": 0.288135593220339,
+     "mean_coverage": 0.00152,
+     "mean_retrieval": 0.99848,
+     "mean_mode1_share": 0.00152,
+     "zero_coverage_share": 0.984
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.012,
+     "violation_se": 0.004869496893930624,
+     "mean_risk": 0.012142474102312647,
+     "p95_risk": 0.125,
+     "max_risk": 0.31746031746031744,
+     "mean_coverage": 0.006944,
+     "mean_retrieval": 0.993056,
+     "mean_mode1_share": 0.006944,
+     "zero_coverage_share": 0.916
+    }
+   },
+   "joint": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.008872247347497909,
+     "p95_risk": 0.012048192771084338,
+     "max_risk": 0.014256619144602852,
+     "mean_coverage": 0.97914,
+     "mean_retrieval": 0.988908,
+     "mean_mode1_share": 0.011092000000000001,
+     "zero_coverage_share": 0.004
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.010779595777567132,
+     "p95_risk": 0.012072434607645875,
+     "max_risk": 0.018108651911468814,
+     "mean_coverage": 0.992048,
+     "mean_retrieval": 0.988804,
+     "mean_mode1_share": 0.011196,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.010803309345080081,
+     "p95_risk": 0.012072434607645875,
+     "max_risk": 0.018108651911468814,
+     "mean_coverage": 0.9921319999999999,
+     "mean_retrieval": 0.988804,
+     "mean_mode1_share": 0.011196,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.010803309345080081,
+     "p95_risk": 0.012072434607645875,
+     "max_risk": 0.018108651911468814,
+     "mean_coverage": 0.9921319999999999,
+     "mean_retrieval": 0.988804,
+     "mean_mode1_share": 0.011196,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.010803309345080081,
+     "p95_risk": 0.012072434607645875,
+     "max_risk": 0.018108651911468814,
+     "mean_coverage": 0.9921319999999999,
+     "mean_retrieval": 0.988804,
+     "mean_mode1_share": 0.011196,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint_conservative": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.008872247347497909,
+     "p95_risk": 0.012048192771084338,
+     "max_risk": 0.014256619144602852,
+     "mean_coverage": 0.97914,
+     "mean_retrieval": 0.988908,
+     "mean_mode1_share": 0.011092000000000001,
+     "zero_coverage_share": 0.004
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.010787946435917791,
+     "p95_risk": 0.012072434607645875,
+     "max_risk": 0.018108651911468814,
+     "mean_coverage": 0.992044,
+     "mean_retrieval": 0.988684,
+     "mean_mode1_share": 0.011316000000000001,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.010803309345080081,
+     "p95_risk": 0.012072434607645875,
+     "max_risk": 0.018108651911468814,
+     "mean_coverage": 0.9921319999999999,
+     "mean_retrieval": 0.988804,
+     "mean_mode1_share": 0.011196,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint_split": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    }
+   }
+  },
+  "recal250_unicode": {
+   "mode1_only": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    }
+   },
+   "mode1_only_largest": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.012,
+     "violation_se": 0.004869496893930624,
+     "mean_risk": 0.010961502242011319,
+     "p95_risk": 0.10810810810810811,
+     "max_risk": 0.2,
+     "mean_coverage": 0.00816,
+     "mean_retrieval": 0.99184,
+     "mean_mode1_share": 0.00816,
+     "zero_coverage_share": 0.88
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.004,
+     "violation_se": 0.002822764602300376,
+     "mean_risk": 0.03272138832396213,
+     "p95_risk": 0.16279069767441862,
+     "max_risk": 0.24528301886792453,
+     "mean_coverage": 0.026312000000000002,
+     "mean_retrieval": 0.973688,
+     "mean_mode1_share": 0.026312000000000002,
+     "zero_coverage_share": 0.598
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.012,
+     "violation_se": 0.004869496893930624,
+     "mean_risk": 0.06248684806941393,
+     "p95_risk": 0.2,
+     "max_risk": 0.288135593220339,
+     "mean_coverage": 0.046792,
+     "mean_retrieval": 0.9532079999999999,
+     "mean_mode1_share": 0.046792,
+     "zero_coverage_share": 0.302
+    }
+   },
+   "joint": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.011648118163105127,
+     "p95_risk": 0.012072434607645875,
+     "max_risk": 0.012072434607645875,
+     "mean_coverage": 0.996564,
+     "mean_retrieval": 0.994792,
+     "mean_mode1_share": 0.005208,
+     "zero_coverage_share": 0.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.01172545258549035,
+     "p95_risk": 0.012072434607645875,
+     "max_risk": 0.012072434607645875,
+     "mean_coverage": 0.996912,
+     "mean_retrieval": 0.994792,
+     "mean_mode1_share": 0.005208,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.01172545258549035,
+     "p95_risk": 0.012072434607645875,
+     "max_risk": 0.012072434607645875,
+     "mean_coverage": 0.996912,
+     "mean_retrieval": 0.994792,
+     "mean_mode1_share": 0.005208,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.01172545258549035,
+     "p95_risk": 0.012072434607645875,
+     "max_risk": 0.012072434607645875,
+     "mean_coverage": 0.996912,
+     "mean_retrieval": 0.994792,
+     "mean_mode1_share": 0.005208,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.01172545258549035,
+     "p95_risk": 0.012072434607645875,
+     "max_risk": 0.012072434607645875,
+     "mean_coverage": 0.996912,
+     "mean_retrieval": 0.994792,
+     "mean_mode1_share": 0.005208,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint_conservative": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.011445798031143707,
+     "p95_risk": 0.012072434607645875,
+     "max_risk": 0.012072434607645875,
+     "mean_coverage": 0.99576,
+     "mean_retrieval": 0.994792,
+     "mean_mode1_share": 0.005208,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.01172545258549035,
+     "p95_risk": 0.012072434607645875,
+     "max_risk": 0.012072434607645875,
+     "mean_coverage": 0.996912,
+     "mean_retrieval": 0.994792,
+     "mean_mode1_share": 0.005208,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.01172545258549035,
+     "p95_risk": 0.012072434607645875,
+     "max_risk": 0.012072434607645875,
+     "mean_coverage": 0.996912,
+     "mean_retrieval": 0.994792,
+     "mean_mode1_share": 0.005208,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.01172545258549035,
+     "p95_risk": 0.012072434607645875,
+     "max_risk": 0.012072434607645875,
+     "mean_coverage": 0.996912,
+     "mean_retrieval": 0.994792,
+     "mean_mode1_share": 0.005208,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint_split": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.010902481042307673,
+     "p95_risk": 0.012072434607645875,
+     "max_risk": 0.012219959266802444,
+     "mean_coverage": 0.9890800000000001,
+     "mean_retrieval": 0.990964,
+     "mean_mode1_share": 0.009035999999999999,
+     "zero_coverage_share": 0.004
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.010902481042307673,
+     "p95_risk": 0.012072434607645875,
+     "max_risk": 0.012219959266802444,
+     "mean_coverage": 0.9890800000000001,
+     "mean_retrieval": 0.990964,
+     "mean_mode1_share": 0.009035999999999999,
+     "zero_coverage_share": 0.004
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.010955189933692796,
+     "p95_risk": 0.012072434607645875,
+     "max_risk": 0.014084507042253521,
+     "mean_coverage": 0.993024,
+     "mean_retrieval": 0.990776,
+     "mean_mode1_share": 0.009224,
+     "zero_coverage_share": 0.0
+    }
+   }
+  },
+  "unseen_timezones": {
+   "mode1_only": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    }
+   },
+   "mode1_only_largest": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.074,
+     "violation_se": 0.011706750189527408,
+     "mean_risk": 0.02969634517292757,
+     "p95_risk": 0.05263157894736842,
+     "max_risk": 0.06666666666666667,
+     "mean_coverage": 0.107492,
+     "mean_retrieval": 0.8925080000000001,
+     "mean_mode1_share": 0.107492,
+     "zero_coverage_share": 0.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.04422978033906253,
+     "p95_risk": 0.05649717514124294,
+     "max_risk": 0.06417112299465241,
+     "mean_coverage": 0.299872,
+     "mean_retrieval": 0.7001280000000001,
+     "mean_mode1_share": 0.299872,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.06040747973341211,
+     "p95_risk": 0.06451612903225806,
+     "max_risk": 0.06486486486486487,
+     "mean_coverage": 0.383896,
+     "mean_retrieval": 0.6161040000000001,
+     "mean_mode1_share": 0.383896,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.06072365418011185,
+     "p95_risk": 0.06694560669456066,
+     "max_risk": 0.08300395256916997,
+     "mean_coverage": 0.437424,
+     "mean_retrieval": 0.5625760000000001,
+     "mean_mode1_share": 0.437424,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.07443122077389157,
+     "p95_risk": 0.0962962962962963,
+     "max_risk": 0.10218978102189781,
+     "mean_coverage": 0.492396,
+     "mean_retrieval": 0.5076039999999999,
+     "mean_mode1_share": 0.492396,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.005409791477598707,
+     "p95_risk": 0.006,
+     "max_risk": 0.006,
+     "mean_coverage": 0.9985,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.005409791477598707,
+     "p95_risk": 0.006,
+     "max_risk": 0.006,
+     "mean_coverage": 0.9985,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.005409791477598707,
+     "p95_risk": 0.006,
+     "max_risk": 0.006,
+     "mean_coverage": 0.9985,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.005409791477598707,
+     "p95_risk": 0.006,
+     "max_risk": 0.006,
+     "mean_coverage": 0.9985,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.005409791477598707,
+     "p95_risk": 0.006,
+     "max_risk": 0.006,
+     "mean_coverage": 0.9985,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint_conservative": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.005409791477598707,
+     "p95_risk": 0.006,
+     "max_risk": 0.006,
+     "mean_coverage": 0.9985,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.005409791477598707,
+     "p95_risk": 0.006,
+     "max_risk": 0.006,
+     "mean_coverage": 0.9985,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.005409791477598707,
+     "p95_risk": 0.006,
+     "max_risk": 0.006,
+     "mean_coverage": 0.9985,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.005409791477598707,
+     "p95_risk": 0.006,
+     "max_risk": 0.006,
+     "mean_coverage": 0.9985,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.005409791477598707,
+     "p95_risk": 0.006,
+     "max_risk": 0.006,
+     "mean_coverage": 0.9985,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint_split": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0042151299927872055,
+     "p95_risk": 0.006,
+     "max_risk": 0.006,
+     "mean_coverage": 0.890796,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.106
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.004704346198778032,
+     "p95_risk": 0.006,
+     "max_risk": 0.006,
+     "mean_coverage": 0.9964120000000001,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.004704346198778032,
+     "p95_risk": 0.006,
+     "max_risk": 0.006,
+     "mean_coverage": 0.9964120000000001,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.004704346198778032,
+     "p95_risk": 0.006,
+     "max_risk": 0.006,
+     "mean_coverage": 0.9964120000000001,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.004704346198778032,
+     "p95_risk": 0.006,
+     "max_risk": 0.006,
+     "mean_coverage": 0.9964120000000001,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 0.0
+    }
+   }
+  },
+  "seen_others_timezones": {
+   "joint": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.007088010812534501,
+     "p95_risk": 0.007472826086956522,
+     "max_risk": 0.007472826086956522,
+     "mean_coverage": 0.9992350543478261,
+     "mean_retrieval": 0.9986684782608696,
+     "mean_mode1_share": 0.0013315217391304348,
+     "zero_coverage_share": 0.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.007088010812534501,
+     "p95_risk": 0.007472826086956522,
+     "max_risk": 0.007472826086956522,
+     "mean_coverage": 0.9992350543478261,
+     "mean_retrieval": 0.9986684782608696,
+     "mean_mode1_share": 0.0013315217391304348,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.007088010812534501,
+     "p95_risk": 0.007472826086956522,
+     "max_risk": 0.007472826086956522,
+     "mean_coverage": 0.9992350543478261,
+     "mean_retrieval": 0.9986684782608696,
+     "mean_mode1_share": 0.0013315217391304348,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.007088010812534501,
+     "p95_risk": 0.007472826086956522,
+     "max_risk": 0.007472826086956522,
+     "mean_coverage": 0.9992350543478261,
+     "mean_retrieval": 0.9986684782608696,
+     "mean_mode1_share": 0.0013315217391304348,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.007088010812534501,
+     "p95_risk": 0.007472826086956522,
+     "max_risk": 0.007472826086956522,
+     "mean_coverage": 0.9992350543478261,
+     "mean_retrieval": 0.9986684782608696,
+     "mean_mode1_share": 0.0013315217391304348,
+     "zero_coverage_share": 0.0
+    }
+   }
+  },
+  "recal100_timezones": {
+   "mode1_only": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    }
+   },
+   "mode1_only_largest": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.004,
+     "violation_se": 0.002822764602300376,
+     "mean_risk": 0.00041919541366017596,
+     "p95_risk": 0.0,
+     "max_risk": 0.11258278145695365,
+     "mean_coverage": 0.0022800000000000003,
+     "mean_retrieval": 0.99772,
+     "mean_mode1_share": 0.0022800000000000003,
+     "zero_coverage_share": 0.996
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.022,
+     "violation_se": 0.006559878047646922,
+     "mean_risk": 0.019889185800050824,
+     "p95_risk": 0.0888030888030888,
+     "max_risk": 0.15649867374005305,
+     "mean_coverage": 0.132428,
+     "mean_retrieval": 0.867572,
+     "mean_mode1_share": 0.132428,
+     "zero_coverage_share": 0.688
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.034,
+     "violation_se": 0.008104813384649889,
+     "mean_risk": 0.06345726364838908,
+     "p95_risk": 0.14492753623188406,
+     "max_risk": 0.19616204690831557,
+     "mean_coverage": 0.384504,
+     "mean_retrieval": 0.6154959999999999,
+     "mean_mode1_share": 0.384504,
+     "zero_coverage_share": 0.218
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.038,
+     "violation_se": 0.00855055553750749,
+     "mean_risk": 0.11362540680711412,
+     "p95_risk": 0.19661733615221988,
+     "max_risk": 0.214,
+     "mean_coverage": 0.601536,
+     "mean_retrieval": 0.398464,
+     "mean_mode1_share": 0.601536,
+     "zero_coverage_share": 0.04
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.16214574916882427,
+     "p95_risk": 0.21327967806841047,
+     "max_risk": 0.214,
+     "mean_coverage": 0.7864479999999999,
+     "mean_retrieval": 0.213552,
+     "mean_mode1_share": 0.7864479999999999,
+     "zero_coverage_share": 0.008
+    }
+   },
+   "joint": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.003538300853649648,
+     "p95_risk": 0.006024096385542169,
+     "max_risk": 0.008,
+     "mean_coverage": 0.9853719999999999,
+     "mean_retrieval": 0.986388,
+     "mean_mode1_share": 0.013612,
+     "zero_coverage_share": 0.004
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.003744766662475252,
+     "p95_risk": 0.006036217303822937,
+     "max_risk": 0.008,
+     "mean_coverage": 0.99,
+     "mean_retrieval": 0.988724,
+     "mean_mode1_share": 0.011276,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.003744766662475252,
+     "p95_risk": 0.006036217303822937,
+     "max_risk": 0.008,
+     "mean_coverage": 0.99,
+     "mean_retrieval": 0.988724,
+     "mean_mode1_share": 0.011276,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.003744766662475252,
+     "p95_risk": 0.006036217303822937,
+     "max_risk": 0.008,
+     "mean_coverage": 0.99,
+     "mean_retrieval": 0.988724,
+     "mean_mode1_share": 0.011276,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.003744766662475252,
+     "p95_risk": 0.006036217303822937,
+     "max_risk": 0.008,
+     "mean_coverage": 0.99,
+     "mean_retrieval": 0.988724,
+     "mean_mode1_share": 0.011276,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint_conservative": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.003538300853649648,
+     "p95_risk": 0.006024096385542169,
+     "max_risk": 0.008,
+     "mean_coverage": 0.9853719999999999,
+     "mean_retrieval": 0.986388,
+     "mean_mode1_share": 0.013612,
+     "zero_coverage_share": 0.004
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.003744766662475252,
+     "p95_risk": 0.006036217303822937,
+     "max_risk": 0.008,
+     "mean_coverage": 0.99,
+     "mean_retrieval": 0.988724,
+     "mean_mode1_share": 0.011276,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.003744766662475252,
+     "p95_risk": 0.006036217303822937,
+     "max_risk": 0.008,
+     "mean_coverage": 0.99,
+     "mean_retrieval": 0.988724,
+     "mean_mode1_share": 0.011276,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint_split": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    }
+   }
+  },
+  "recal250_timezones": {
+   "mode1_only": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    }
+   },
+   "mode1_only_largest": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.022,
+     "violation_se": 0.006559878047646922,
+     "mean_risk": 0.00515267973701775,
+     "p95_risk": 0.041916167664670656,
+     "max_risk": 0.0888030888030888,
+     "mean_coverage": 0.03822,
+     "mean_retrieval": 0.96178,
+     "mean_mode1_share": 0.03822,
+     "zero_coverage_share": 0.878
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.032,
+     "violation_se": 0.007870959280799261,
+     "mean_risk": 0.04852887535872086,
+     "p95_risk": 0.09722222222222222,
+     "max_risk": 0.14454277286135694,
+     "mean_coverage": 0.333316,
+     "mean_retrieval": 0.6666839999999999,
+     "mean_mode1_share": 0.333316,
+     "zero_coverage_share": 0.202
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.04,
+     "violation_se": 0.008763560920082658,
+     "mean_risk": 0.09986633661782468,
+     "p95_risk": 0.14600550964187328,
+     "max_risk": 0.18313253012048192,
+     "mean_coverage": 0.5614399999999999,
+     "mean_retrieval": 0.43856,
+     "mean_mode1_share": 0.5614399999999999,
+     "zero_coverage_share": 0.008
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.024,
+     "violation_se": 0.00684455988358638,
+     "mean_risk": 0.1485700073172759,
+     "p95_risk": 0.19532908704883228,
+     "max_risk": 0.214,
+     "mean_coverage": 0.722712,
+     "mean_retrieval": 0.27728800000000003,
+     "mean_mode1_share": 0.722712,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.19417938610899121,
+     "p95_risk": 0.214,
+     "max_risk": 0.214,
+     "mean_coverage": 0.914172,
+     "mean_retrieval": 0.085828,
+     "mean_mode1_share": 0.914172,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.004697959023023098,
+     "p95_risk": 0.006,
+     "max_risk": 0.006024096385542169,
+     "mean_coverage": 0.997144,
+     "mean_retrieval": 0.9948440000000001,
+     "mean_mode1_share": 0.005156,
+     "zero_coverage_share": 0.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.004697959023023098,
+     "p95_risk": 0.006,
+     "max_risk": 0.006024096385542169,
+     "mean_coverage": 0.997144,
+     "mean_retrieval": 0.9948440000000001,
+     "mean_mode1_share": 0.005156,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.004697959023023098,
+     "p95_risk": 0.006,
+     "max_risk": 0.006024096385542169,
+     "mean_coverage": 0.997144,
+     "mean_retrieval": 0.9948440000000001,
+     "mean_mode1_share": 0.005156,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.004697959023023098,
+     "p95_risk": 0.006,
+     "max_risk": 0.006024096385542169,
+     "mean_coverage": 0.997144,
+     "mean_retrieval": 0.9948440000000001,
+     "mean_mode1_share": 0.005156,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.004697959023023098,
+     "p95_risk": 0.006,
+     "max_risk": 0.006024096385542169,
+     "mean_coverage": 0.997144,
+     "mean_retrieval": 0.9948440000000001,
+     "mean_mode1_share": 0.005156,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint_conservative": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.004697959023023098,
+     "p95_risk": 0.006,
+     "max_risk": 0.006024096385542169,
+     "mean_coverage": 0.997144,
+     "mean_retrieval": 0.9948440000000001,
+     "mean_mode1_share": 0.005156,
+     "zero_coverage_share": 0.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.004697959023023098,
+     "p95_risk": 0.006,
+     "max_risk": 0.006024096385542169,
+     "mean_coverage": 0.997144,
+     "mean_retrieval": 0.9948440000000001,
+     "mean_mode1_share": 0.005156,
+     "zero_coverage_share": 0.0
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.004697959023023098,
+     "p95_risk": 0.006,
+     "max_risk": 0.006024096385542169,
+     "mean_coverage": 0.997144,
+     "mean_retrieval": 0.9948440000000001,
+     "mean_mode1_share": 0.005156,
+     "zero_coverage_share": 0.0
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.004697959023023098,
+     "p95_risk": 0.006,
+     "max_risk": 0.006024096385542169,
+     "mean_coverage": 0.997144,
+     "mean_retrieval": 0.9948440000000001,
+     "mean_mode1_share": 0.005156,
+     "zero_coverage_share": 0.0
+    }
+   },
+   "joint_split": {
+    "0.05": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.10": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0,
+     "p95_risk": 0.0,
+     "max_risk": 0.0,
+     "mean_coverage": 0.0,
+     "mean_retrieval": 1.0,
+     "mean_mode1_share": 0.0,
+     "zero_coverage_share": 1.0
+    },
+    "0.15": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.0038423662707501483,
+     "p95_risk": 0.006,
+     "max_risk": 0.008,
+     "mean_coverage": 0.974932,
+     "mean_retrieval": 0.9919560000000001,
+     "mean_mode1_share": 0.008044,
+     "zero_coverage_share": 0.018
+    },
+    "0.20": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.003922834284423271,
+     "p95_risk": 0.006,
+     "max_risk": 0.008,
+     "mean_coverage": 0.988844,
+     "mean_retrieval": 0.991648,
+     "mean_mode1_share": 0.008352,
+     "zero_coverage_share": 0.004
+    },
+    "0.25": {
+     "draws": 500,
+     "violation_rate": 0.0,
+     "violation_se": 4.4721359549995796e-08,
+     "mean_risk": 0.003946906525290547,
+     "p95_risk": 0.006,
+     "max_risk": 0.008,
+     "mean_coverage": 0.992832,
+     "mean_retrieval": 0.99156,
+     "mean_mode1_share": 0.00844,
+     "zero_coverage_share": 0.0
+    }
+   }
+  }
+ }
+}
