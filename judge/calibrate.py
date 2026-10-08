@@ -111,7 +111,8 @@ def single_threshold(u: list[float], w: list[int], alpha: float, delta: float,
 
 
 def joint_thresholds(u1: list[float], w1: list[int], u2: list[float], w2: list[int],
-                     alpha: float, delta: float, conservative: bool = False) -> tuple[float, float]:
+                     alpha: float, delta: float, conservative: bool = False,
+                     fewer_retrievals: bool = False) -> tuple[float, float]:
     """Algorithm 1 and Eq. 14: the (t1, t2) pair that accepts the most calibration items while
     its own Clopper-Pearson bound certifies risk <= alpha.
 
@@ -119,6 +120,12 @@ def joint_thresholds(u1: list[float], w1: list[int], u2: list[float], w2: list[i
     ascending, with a strict improvement rule) sets the tie-break exactly as in Algorithm 1.
     `conservative=True` runs every check at delta / (|T1| |T2|), the grid-corrected variant of
     Appendix D.4. The pointwise version, as published, makes no correction for the search.
+
+    `fewer_retrievals=True` is not in the paper. It keeps Eq. 14's objective but breaks ties
+    between pairs that accept the same number of verdicts toward the largest t1, the pair that
+    answers most from memory and retrieves least. As printed, Algorithm 1 breaks the same tie
+    toward the smallest t1, so whenever Mode 2 alone can certify every item, it retrieves for
+    every item but one.
     """
     n = len(u1)
     t1s = sorted(set(u1))
@@ -147,9 +154,6 @@ def joint_thresholds(u1: list[float], w1: list[int], u2: list[float], w2: list[i
             cnt[j] -= 1
             err[j] -= w2[i]
             pos += 1
-        remaining = n - m1
-        if m1 + remaining <= best_m:
-            continue
         # Cumulative Mode 2 counts and errors at each t2.
         cc, ce = [0] * len(t2s), [0] * len(t2s)
         c = e = 0
@@ -161,7 +165,7 @@ def joint_thresholds(u1: list[float], w1: list[int], u2: list[float], w2: list[i
         j = len(t2s) - 1
         while j >= 0:
             m = m1 + cc[j]
-            if m <= best_m:
+            if m < best_m or (m == best_m and not fewer_retrievals):
                 break
             if e1 + ce[j] <= table[m]:
                 # Smallest t2 with the same accepted set, matching Algorithm 1's first-hit rule.
@@ -191,7 +195,9 @@ def joint_split_certified(u1, w1, u2, w2, alpha: float, delta: float,
     for r in range(rungs):
         target = alpha * (0.2 + 0.8 * r / (rungs - 1))
         pair = joint_thresholds(pick(u1, a), pick(w1, a), pick(u2, a), pick(w2, a), target, delta)
-        if pair not in ladder:
+        # A rung that accepts nothing on the first half is not a candidate. Testing it would
+        # fail and end the sequence before the rungs that could pass.
+        if pair != (NEG_INF, NEG_INF) and pair not in ladder:
             ladder.append(pair)
     table = wmax_table(alpha, delta, len(b))
     chosen = (NEG_INF, NEG_INF)

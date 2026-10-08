@@ -85,6 +85,19 @@ class Thresholds(unittest.TestCase):
             self.assertEqual(joint_thresholds(u1, w1, u2, w2, alpha, 0.05),
                              brute_joint(u1, w1, u2, w2, alpha, 0.05), trial)
 
+    def test_fewer_retrievals_keeps_coverage_and_answers_more_from_memory(self):
+        rng = random.Random(5)
+        u1 = [rng.random() for _ in range(400)]
+        u2 = [rng.random() * 0.1 for _ in range(400)]
+        w1 = [int(rng.random() < 0.2 * x) for x in u1]
+        w2 = [int(rng.random() < 0.01) for _ in u2]
+        rows = [{"u1": a, "w1": b, "u2": c, "w2": d} for a, b, c, d in zip(u1, w1, u2, w2)]
+        printed = evaluate(rows, *joint_thresholds(u1, w1, u2, w2, 0.1, 0.05))
+        cheap = evaluate(rows, *joint_thresholds(u1, w1, u2, w2, 0.1, 0.05, fewer_retrievals=True))
+        self.assertEqual(printed["accepted"], cheap["accepted"])
+        self.assertLess(cheap["retrieval"], printed["retrieval"])
+        self.assertTrue(certified(cheap["accepted"], cheap["errors"], 0.1, 0.05))
+
     def test_conservative_never_accepts_more(self):
         rng = random.Random(2)
         u1 = [rng.random() for _ in range(300)]

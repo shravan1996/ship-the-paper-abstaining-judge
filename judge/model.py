@@ -12,6 +12,8 @@ from __future__ import annotations
 import json
 import math
 import os
+import time
+import urllib.error
 import urllib.request
 
 OLLAMA = os.environ.get("OLLAMA_CHAT_URL", "http://localhost:11434/api/chat")
@@ -63,8 +65,14 @@ def chat(system: str, user: str, num_predict: int, logprobs: bool) -> dict:
         body["logprobs"] = True
         body["top_logprobs"] = 20
     req = urllib.request.Request(OLLAMA, data=json.dumps(body).encode(), headers={"Content-Type": "application/json"})
-    with urllib.request.urlopen(req, timeout=300) as r:
-        return json.load(r)
+    for attempt in range(5):
+        try:
+            with urllib.request.urlopen(req, timeout=300) as r:
+                return json.load(r)
+        except (urllib.error.URLError, ConnectionError, TimeoutError):
+            if attempt == 4:
+                raise
+            time.sleep(10 * (attempt + 1))
 
 
 def answer(question: str) -> dict:

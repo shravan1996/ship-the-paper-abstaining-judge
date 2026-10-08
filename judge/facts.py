@@ -288,3 +288,22 @@ def build_all(seed: int = 20260818) -> tuple[list[dict], list[dict]]:
     for j, d in enumerate(docs):
         d["id"] = j
     return items, docs
+
+
+def gold_title(item: dict) -> str:
+    """Title of the corpus document that answers this item: the row a perfect retriever returns."""
+    q = item["q"]
+    if item["family"] == "elements":
+        by_num = {str(z): n for z, _, n in ELEMENTS}
+        by_sym = {s: n for _, s, n in ELEMENTS}
+        m = re.search(r"atomic number (\d+)\?", q)
+        if m:
+            return f"Periodic table: {by_num[m.group(1)]}"
+        m = re.search(r"symbol ([A-Z][a-z]?)\?", q)
+        if m:
+            return f"Periodic table: {by_sym[m.group(1)]}"
+        m = re.search(r"(?:of|for) ([a-z]+)\?", q)
+        return f"Periodic table: {m.group(1).capitalize()}"
+    name = re.search(r'"([^"]+)"', q).group(1)
+    return {"ports": f"IANA service registry: {name}", "unicode": f"Unicode character: {name}",
+            "timezones": f"Time zone database: {name}"}[item["family"]]

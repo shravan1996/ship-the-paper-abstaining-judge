@@ -18,13 +18,14 @@ OLLAMA_CHAT_URL at it if it is not on the default port.
 
 import argparse
 import json
+import random
 import threading
 import time
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 from judge import model
-from judge.facts import admit
+from judge.facts import admit, gold_title
 from judge.retrieve import BM25, format_results
 
 ROOT = Path(__file__).parent
@@ -62,6 +63,10 @@ def run_pass(name, items, fn, workers):
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--workers", type=int, default=1)
+    ap.add_argument("--nogold", action="store_true",
+                    help="exploratory: a fourth pass where the answering document is removed from the results")
+    ap.add_argument("--nogold-max-q", type=float, default=1.0,
+                    help="only judge items explore.py could degrade at this share or below")
     args = ap.parse_args()
 
     items = load(DATA / "items.jsonl")
@@ -81,6 +86,32 @@ def main() -> None:
 
     m1 = run_pass("mode1", items, mode1, args.workers)
     m2 = run_pass("mode2", items, mode2, args.workers)
+
+    if args.nogold:
+        # Added after the pre-registered run. The corpus holds the answer to every question, so
+        # Mode 2 was right 99.3% of the time. This pass asks what the judge does when search comes
+        # back with neighbours of the right row and not the row itself, which is how the web fails
+        # (the paper's Appendix E.3 lists off-topic retrieval and insufficient evidence).
+        def mode2_nogold(it):
+            gold = gold_title(it)
+            hits = [h for h in index.search(it["q"], k=6) if h["title"] != gold][:3]
+            j = model.judge(model.MODE2_SYSTEM, model.mode2_user(it["q"], answers[it["id"]]["candidate"], format_results(hits)))
+            return {**j, "evidence_ids": [h["id"] for h in hits]}
+        # explore.py degrades an item at share q when this fixed draw is below q, so items whose
+        # draw is above the largest q analysed are never needed.
+        degradable = [it for it in items if random.Random(f"nogold:{it['id']}").random() < args.nogold_max_q]
+        nogold = run_pass("mode2_nogold", degradable, mode2_nogold, args.workers)
+        written = 0
+        with open(DATA / "judgments_nogold.jsonl", "w") as f:
+            for it in items:
+                if it["id"] not in nogold:
+                    continue
+                written += 1
+                j = nogold[it["id"]]
+                f.write(json.dumps({"id": it["id"], "v2": j["v"], "p2": j["p_true"], "u2": j["u"],
+                                    "parsed2": j["parsed"], "evidence_ids": j["evidence_ids"],
+                                    "mode2_s": j["seconds"], "mode2_prompt_tokens": j["prompt_tokens"]}) + "\n")
+        print(f"wrote {written} rows to data/judgments_nogold.jsonl", flush=True)
 
     with open(DATA / "judgments.jsonl", "w") as f:
         for it in items:
